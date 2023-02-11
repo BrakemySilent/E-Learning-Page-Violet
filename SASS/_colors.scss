@@ -1,0 +1,11 @@
+$blue-light: #666ca3;
+$blue-dark: #13183f;
+$gray: #83869a;
+$gray-light: #f0f1ff;
+$pink-dark: #f74780;
+$pink-light: #ffa7c3;
+$pink-gradient: #f02aa6;
+$orange-gradient: #ff6f48;
+$blue-gradient: #4851ff;
+$gradient-orange-pink: linear-gradient(180deg, var(--color-orange-gradient), var(--color-pink-gradient));
+$gradient-blue-pink: linear-gradient(180deg, var(--color-blue-gradient), var(--color-pink-gradient));
