@@ -19,6 +19,7 @@ body {
 
 main {
   width: 100vw;
+  background-color: #f0f1ff;
   overflow: hidden;
 }
 
@@ -26,8 +27,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   height: 15vh;
+  margin: auto;
   padding: 1rem;
   background-color: #f0f1ff;
 }
@@ -55,8 +57,9 @@ main {
 }
 
 .profile {
-  width: 100vw;
+  width: 90%;
   height: 100vh;
+  margin: auto;
   padding: 1rem;
   background-color: #f0f1ff;
 }
@@ -103,6 +106,71 @@ main {
   display: none;
 }
 
+.offert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.offert__baner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 120px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff6f48, #f02aa6);
+}
+.offert__baner h2 {
+  font-family: "montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+.offert__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  background-color: white;
+}
+.offert__icon {
+  position: relative;
+  top: -50px;
+}
+.offert__text {
+  position: relative;
+  top: -4rem;
+}
+.offert__title {
+  margin-bottom: 2rem;
+  font-family: "montserrat", sans-serif;
+  font-size: 2rem;
+}
+.offert__description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.offert__btn {
+  position: relative;
+  top: 3rem;
+  font-size: 1.8rem;
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+  color: #f74780;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .header {
     height: 10vh;
@@ -120,7 +188,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     padding: 3rem;
   }
   .profile__description {
@@ -155,6 +223,15 @@ main {
     height: 100%;
     transform: scale(1.3);
   }
+  .offert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offert__baner {
+    width: 90%;
+    height: 83%;
+    margin: auto;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -174,7 +251,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    width: 100%;
     padding: 5rem 3rem;
   }
   .profile__description {
@@ -213,13 +289,17 @@ main {
     transform: scale(0.6);
     z-index: 1;
   }
+  .offert {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   main {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
   }
   .header {
+    width: 100%;
     height: 10vh;
     padding: 2rem;
   }
